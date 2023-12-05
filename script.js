@@ -1,7 +1,6 @@
-//expressão é algo que se atribui a uma variável
-
 const upperName = function (name) {
     return name.toUpperCase()
 }
 
-console.log(upperName('andre'))
+let valorDoH1 = document.getElementById("value-name")
+valorDoH1.innerHTML = upperName('xander')
