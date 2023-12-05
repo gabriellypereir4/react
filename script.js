@@ -1,8 +1,7 @@
-//upperName coloca o nome pra letra maíscula
-//toUpperCase retorna todo o seletor com letra maiúscula
+//toLowerCase retorna todo o seletor com letra minuscúla
 
-function upperName(name) {
-    return name.toUpperCase();
+const lowerName = (name) => {
+    return name.toLowerCase()
 }
 
-console.log(upperName('andre'))
+console.log(lowerName('andre'))
