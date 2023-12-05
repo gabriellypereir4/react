@@ -1,8 +1,8 @@
-//com o . se acessa uma propriedade
-// toUpperCase retorna todo o seletor com letra maiúscula
+//upperName coloca o nome pra letra maíscula
+//toUpperCase retorna todo o seletor com letra maiúscula
 
-const menu = {
-    seletor: '.principal',
-};
+function upperName(name) {
+    return name.toUpperCase();
+}
 
-console.log(menu.seletor.toUpperCase());
+console.log(upperName('andre'))
