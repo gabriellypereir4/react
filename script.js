@@ -1,6 +1,3 @@
-const upperName = function (name) {
-    return name.toUpperCase()
-}
+const upperName = (name) => name.toUpperCase()
 
-let valorDoH1 = document.getElementById("value-name")
-valorDoH1.innerHTML = upperName('xander')
+console.log(upperName('morango'))
