@@ -1,11 +1,10 @@
-//addEventListener('click') é um evento de clique, então quando eu clicar na tela vai acontecer algo pra mim 
+//Rest e Spread
+//Rest
 
-function handleMouse({clientX, clientY}){
-    console.log(clientX,clientY)
+function showList(empresa, ...clientes) {
+    clientes.forEach((cliente) => {
+        console.log(cliente, empresa)
+    })
 }
 
-const frutas = ['banana', 'uva']
-const [fruta1, fruta2] = frutas
-console.log(fruta2)
-
-document.addEventListener('click', handleMouse)
+showList('Google', 'Morango', 'Melancia')
