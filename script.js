@@ -1,10 +1,23 @@
 //Rest e Spread
-//Rest
+//Spread
 
-function showList(empresa, ...clientes) {
-    clientes.forEach((cliente) => {
-        console.log(cliente, empresa)
-    })
-}
+// Arrays
+const numeros = [1, 4, 9, 2, 3, 6, 20];
+Math.max(...numeros); // retorna 20
 
-showList('Google', 'Morango', 'Melancia')
+// Transformar ArrayLike and Array
+const items = document.querySelectorAll('li');
+
+// items.map() não existe, agora [...items]
+// é uma nova array, com cada elemento de items.
+[...items].map((item) => (item.innerText = 'Teste'));
+
+// Objetos
+const carro = {
+  cor: 'azul',
+  portas: 4,
+  ano: 2020,
+};
+
+const cloneCarro = { ...carro };
+const carroEsportivo = { turbo: true, ...carro };
