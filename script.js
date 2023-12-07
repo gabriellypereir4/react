@@ -1,9 +1,8 @@
 //addEventListener('click') é um evento de clique, então quando eu clicar na tela vai acontecer algo pra mim 
 
 function handleMouse(event){
-    const x = event.clientX
-    const y = event.clientY
-    console.log(x,y)
+    const {clientX, clientY} = event
+    console.log(clientX,clientY)
 }
 
 document.addEventListener('click', handleMouse)
