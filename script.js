@@ -1,5 +1,5 @@
-import quadrado from './quadrado.js'
-import numeroAleatorio from './numeroAleatorio.js'
-
-console.log(quadrado.perimetroQuadrado(5))
-console.log(numeroAleatorio())
+fetch('https://ranekapi.origamid.dev/json/api/produto')
+  .then((response) => response.json())
+  .then((json) => {
+    console.log(json);
+  });
