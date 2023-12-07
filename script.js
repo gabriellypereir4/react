@@ -1,3 +1,7 @@
-const upperName = (name) => name.toUpperCase()
+//addEventListener('click') é um evento de clique, então quando eu clicar na tela vai acontecer algo pra mim 
 
-console.log(upperName('morango'))
+function handleMouse(event){
+    console.log(event)
+}
+
+document.addEventListener('click', handleMouse)
